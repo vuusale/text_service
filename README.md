@@ -53,7 +53,7 @@ Vernam cipher is based on the principle that each plaintext character from a mes
 
 If a truly random key stream is used, the result will be a truly 'random' ciphertext which bears no relation to the original plaintext. In order to achieve utmost security, the encryption keys should be used only once, that's why it is called **One-Time Pad (OTP)**. 
 
-In this application, The OTP can be generated using *get_otp.py* file. It checks the length of the file that OTP is created for, and a random string of ASCII characters with the same length, including numbers, lowercase/uppercase letters and punctuation marks, is generated and saved to the output file. Its usage is basic: `python3 gen_otp.py -f FILE -o OUTPUT`.
+In this application, The OTP can be generated using *gen_otp.py* file. It checks the length of the file that OTP is created for, and a random string of ASCII characters with the same length, including numbers, lowercase/uppercase letters and punctuation marks, is generated and saved to the output file. Its usage is basic: `python3 gen_otp.py -f FILE -o OUTPUT`.
 
 The server first encrypts the plaintext using Vernam cipher, and sends it to the client. Afterwards, it applies the same cipher on the result and sends it to the client for verification (this is done just for the sake of the task). The key concept here is that XOR can be reverted according to the following rule:
 
