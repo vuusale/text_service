@@ -1,0 +1,7 @@
+Package      Version
+------------ -------
+pip          20.2.4
+python-magic 0.4.18
+setuptools   49.6.0
+sockets      1.0.0
+wheel        0.35.1
